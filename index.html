@@ -17,9 +17,31 @@
 </head>
 <body>
 	
-	<div class="grid">
-		
+	<div class="screen screen-grid">
+		<div class="grid"></div>
 	</div>     
+
+	<div class="screen screen-game" style="display:none;">
+		
+		<div class="game-timer-bar"><div class="game-timer-bar-inner"></div></div>
+		<div class="game-timer">
+			<h3 style="display:none;">Time Left</h3>
+			<span class="game-timer-time" style="display:none;"></span>
+		</div>
+		<div class="game-data clearfix">
+			<div class="game-question-wrapper">
+				<h2 class="game-question"></h2>
+			</div>
+			
+			<div class="game-answers">
+
+			</div>
+
+			<div class="game-progress-dots">
+				
+			</div>
+		</div>
+	</div>   
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
