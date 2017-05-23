@@ -337,13 +337,49 @@ var $scale = 100,
 	$exclusion=[],
 	$gameSet=[],
 	$gameQuestions=[],
-	$viewTime=3000,
+	$gameData=[],
+	$viewTime=10000,
 	$questionCount=0,
 	$gameLength=10,
 	$globalFadeTime=800,
 	$gameCorrectCount=0,
 	$gameScore=0,
-	$correctScore=1;
+	$correctScore=1,
+	$currentScreen='screen-grid',
+	$lastScreen='screen-grid';
+
+// ====================================
+// 				^SCREEN CONTROL
+// ====================================
+
+
+
+//changes to targeted screen
+//callback object: {before:<callback before fadein begins>, after: <callback after faded in>}
+function changeScreen(screenClass, callbackObj){
+	
+	//manage current and last screen variables
+	$lastScreen=$currentScreen;
+	$currentScreen=screenClass;
+
+	var elementsToFade=$('.screen:not(.'+screenClass+')');
+	var fadeCount=elementsToFade.length;
+
+	elementsToFade.fadeOut($globalFadeTime, function(){
+		if(--fadeCount>0) return;
+
+		if(callbackObj&&callbackObj.before){
+			callbackObj.before();
+		}
+		
+		$('.'+screenClass).fadeIn($globalFadeTime,function(){
+			if(callbackObj&&callbackObj.after){
+				callbackObj.after();
+			}
+		});
+	});
+}
+
 
 // ====================================
 // 				^GRID
@@ -405,13 +441,41 @@ function addExclusion(candidateX,candidateY,width,height){
 // 				^QUESTIONS
 // ====================================
 
+//clone game data for display at end
+function cloneGameData(){
+	$gameData.push($('.game-data').clone());
+}
+
+//game end
 function endGame(){
-	alert($gameScore+' Correctly Answered');
+
+	//render end screen
+	$('.correct-score-count').text($gameCorrectCount);
+	$('.correct-score-total').text($gameLength);
+	
+	//append game data to history div
+	$('.end-history').empty();
+	$.each($gameData,function(){
+		this.appendTo('.end-history');
+	});
+
+	//nav to end screen and start flickity when shown
+	changeScreen('screen-end',{
+		after:function(){
+			$('.end-history').flickity({
+				prevNextButtons: false,
+				pageDots: false
+			});
+
+			$('.end-history').animate({opacity:'1'});
+		}
+	});
 }
 
 //advance game to next question or end
 function advanceGame(){
 	//after delay, save answer data for later display, reset and proceed
+	cloneGameData();
 	$('.screen-game').fadeOut($globalFadeTime,function(){
 		
 		//after faded out, clean up game screen for next question
@@ -532,12 +596,21 @@ function initQuestions(){
 	askQuestion($questionCount);
 }
 
+
 // ====================================
-// 				^EVENTS
+// 				^GRID PACKING
 // ====================================
 
-var attempt=0;
-$(document).ready(function() {
+function fillGrid(){
+
+	//reset game data
+	$gameCorrectCount=0;
+	$gameScore=0;
+	$exclusion=[];
+	$gameSet=[];
+	$gameQuestions=[];
+	$gameData=[],
+	$('.grid').empty();
 
 	//initialize grid to global size and scale
 	$('.grid').css({'width':$areaX*$scale+'px','height':$areaY*$scale+'px'})
@@ -579,13 +652,28 @@ $(document).ready(function() {
 
 	//animate filled grid in
 	$('.grid').animate({'opacity':'1'},3000,function(){
-		window.setTimeout(function(){
-			$('.grid').fadeOut(function(){
-				initQuestions();
-			});
-		},$viewTime);
+		changeScreen('screen-game',{before:initQuestions,after:function(){
+			$('.grid').css('opacity','0');
+		}});
 	});
-	
+}
+
+// ====================================
+// 				^EVENTS
+// ====================================
+
+//try again button, restart game
+$('body').on('click','.btn-restart',function(){
+	changeScreen('screen-grid',{before:function(){
+		$('.end-history').flickity('destroy').empty().css('opacity','0');
+		fillGrid();
+	}});
+});
+
+var attempt=0;
+$(document).ready(function() {
+
+	fillGrid();
 		
 
 });
