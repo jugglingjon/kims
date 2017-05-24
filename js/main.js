@@ -346,6 +346,7 @@ var $scale = 100,
 	$gameQuestions=[],
 	$gameData=[],
 	$viewTime=30000,
+	$itemCount=10,
 	$questionCount=0,
 	$gameLength=1,
 	$globalFadeTime=800,
@@ -627,38 +628,41 @@ function fillGrid(){
 	$('.grid').css({'width':$areaX*$scale+'px','height':$areaY*$scale+'px'});
 	$('.grid').scaleTo('body');
 
+	var shuffledSet=items;
+	shuffle(shuffledSet);
+
 	//for each item:
-	$.each(items, function() {
+	for(i=0;i<$itemCount;i++){
 
 
-		console.log('\n\nPLACING '+this.name+'\n===================');
+		console.log('\n\nPLACING '+shuffledSet[i].name+'\n===================');
 		var add,candidateX,candidateY;
-		add = newItem(this.name, this.x, this.y);
+		add = newItem(shuffledSet[i].name, shuffledSet[i].x, shuffledSet[i].y);
 		console.log($exclusion);
 		
 		//attempt to plot item on random grid points, repeat until exclusion tests passes (or 50 attempts)
 		do{		
-			candidateX=randomGrid(this.x, $areaX);
-			candidateY=randomGrid(this.y, $areaY);
+			candidateX=randomGrid(shuffledSet[i].x, $areaX);
+			candidateY=randomGrid(shuffledSet[i].y, $areaY);
 			console.log('ATTEMPT: '+candidateX+'-'+candidateY);
 			attempt++;
 		}
-		while(!exclusionTest(candidateX,candidateY,this.x,this.y)&&attempt<50);
+		while(!exclusionTest(candidateX,candidateY,shuffledSet[i].x,shuffledSet[i].y)&&attempt<50);
 
 		//if attempt limit reached, fail and skip, else place
 		if(attempt===50){
-			console.log('FAILURE PLACING '+this.name+'\n===================');
+			console.log('FAILURE PLACING '+shuffledSet[i].name+'\n===================');
 		}
 		else{
 			console.log('***SUCCESS: '+candidateX+'-'+candidateY);
-			addExclusion(candidateX,candidateY,this.x,this.y);		  
+			addExclusion(candidateX,candidateY,shuffledSet[i].x,shuffledSet[i].y);		  
 			add.css({left: gridToPixels(candidateX) + "px",top: gridToPixels(candidateY) + "px"});
 			$(".grid").append(add);
-			$gameSet.push(this);
+			$gameSet.push(shuffledSet[i]);
 		}
 		attempt=0;		
 			
-	});
+	};
 
 
 
