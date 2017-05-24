@@ -609,7 +609,8 @@ function fillGrid(){
 	$exclusion=[];
 	$gameSet=[];
 	$gameQuestions=[];
-	$gameData=[],
+	$gameData=[];
+	$questionCount=0;
 	$('.grid').empty();
 
 	//initialize grid to global size and scale
@@ -652,9 +653,11 @@ function fillGrid(){
 
 	//animate filled grid in
 	$('.grid').animate({'opacity':'1'},3000,function(){
-		changeScreen('screen-game',{before:initQuestions,after:function(){
-			$('.grid').css('opacity','0');
-		}});
+		setTimeout(function(){
+			changeScreen('screen-game',{before:initQuestions,after:function(){
+				$('.grid').css('opacity','0');
+			}});
+		},$viewTime);
 	});
 }
 
