@@ -131,7 +131,8 @@ var items = [
 				],
 				answer:'Round'
 			}
-		]
+		],
+		conflict:"hardware"
 	},
 	{
 		name: "Army Man",
@@ -183,7 +184,8 @@ var items = [
 				],
 				answer:'Wood Screw (pointed tip)'
 			}
-		]
+		],
+		conflict:"hardware"
 	},
 	{
 		name: "Coin",
@@ -440,7 +442,7 @@ function addExclusion(candidateX,candidateY,width,height){
 		for(y=0;y<height;y++){
 			var currentY=candidateY+y;
 			$exclusion.push(currentX+'-'+currentY);
-			console.log('***EXCLUDING: '+currentX+'-'+currentY);
+			console.log('******EXCLUDING: '+currentX+'-'+currentY);
 		};
 	}
 }
@@ -631,38 +633,50 @@ function fillGrid(){
 	var shuffledSet=items;
 	shuffle(shuffledSet);
 
+	//list of conflicts, and current item count as added
+	var conflictList=[],
+		currentCount=0;
+
 	//for each item:
-	for(i=0;i<$itemCount;i++){
+	$.each(shuffledSet,function(){
 
+		//if under current item limit, and item not in conflict list
+		if(currentCount<$itemCount && conflictList.indexOf(this.conflict)===-1){
 
-		console.log('\n\nPLACING '+shuffledSet[i].name+'\n===================');
-		var add,candidateX,candidateY;
-		add = newItem(shuffledSet[i].name, shuffledSet[i].x, shuffledSet[i].y);
-		console.log($exclusion);
-		
-		//attempt to plot item on random grid points, repeat until exclusion tests passes (or 50 attempts)
-		do{		
-			candidateX=randomGrid(shuffledSet[i].x, $areaX);
-			candidateY=randomGrid(shuffledSet[i].y, $areaY);
-			console.log('ATTEMPT: '+candidateX+'-'+candidateY);
-			attempt++;
-		}
-		while(!exclusionTest(candidateX,candidateY,shuffledSet[i].x,shuffledSet[i].y)&&attempt<50);
-
-		//if attempt limit reached, fail and skip, else place
-		if(attempt===50){
-			console.log('FAILURE PLACING '+shuffledSet[i].name+'\n===================');
-		}
-		else{
-			console.log('***SUCCESS: '+candidateX+'-'+candidateY);
-			addExclusion(candidateX,candidateY,shuffledSet[i].x,shuffledSet[i].y);		  
-			add.css({left: gridToPixels(candidateX) + "px",top: gridToPixels(candidateY) + "px"});
-			$(".grid").append(add);
-			$gameSet.push(shuffledSet[i]);
-		}
-		attempt=0;		
+			console.log('\n\nPLACING '+this.name+'\n===================');
+			var add,candidateX,candidateY;
+			add = newItem(this.name, this.x, this.y);
+			console.log($exclusion);
 			
-	};
+			//attempt to plot item on random grid points, repeat until exclusion tests passes (or 50 attempts)
+			do{		
+				candidateX=randomGrid(this.x, $areaX);
+				candidateY=randomGrid(this.y, $areaY);
+				console.log('ATTEMPT: '+candidateX+'-'+candidateY);
+				attempt++;
+			}
+			while(!exclusionTest(candidateX,candidateY,this.x,this.y)&&attempt<50);
+
+			//if attempt limit reached, fail and skip, else place
+			if(attempt===50){
+				console.log('FAILURE PLACING '+this.name+'\n===================');
+			}
+			else{
+				console.log('***SUCCESS: '+candidateX+'-'+candidateY);
+				addExclusion(candidateX,candidateY,this.x,this.y);		  
+				add.css({left: gridToPixels(candidateX) + "px",top: gridToPixels(candidateY) + "px"});
+				$(".grid").append(add);
+				$gameSet.push(this);
+				
+				//if conflicty, add to list. iterate count
+				if(this.conflict)conflictList.push(this.conflict);
+				currentCount++;
+			}
+			attempt=0;	
+		}	
+			
+	});
+	console.log(conflictList);
 
 
 
