@@ -115,8 +115,25 @@ body{
 	background:white;
 }
 
+.screen-grid{
+	.game-timer-bar{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+
+		height: 20px;
+
+		.game-timer-bar-inner{
+			height:20px;
+			background: @progressDark;
+			width:100%;
+		}
+	}
+}
+
 .grid{
-	margin-top: 68px;
+
 	opacity:0;
 	background:white;
 	position:relative;
@@ -266,20 +283,7 @@ body{
 		}
 	}
 
-	.game-timer-bar{
-		position:fixed;
-		top:0;
-		left:0;
-		right:0;
-
-		height: 20px;
-
-		.game-timer-bar-inner{
-			height:20px;
-			background: @progressDark;
-			width:100%;
-		}
-	}
+	
 }
 
 .game-progress-dots{

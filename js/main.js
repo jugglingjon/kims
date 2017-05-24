@@ -343,6 +343,8 @@ $.fn.scaleTo = function(target){
 var $scale = 100,
 	$areaX = 10,
 	$areaY = 7,
+	$startTime,
+	$viewTimer,
 	$exclusion=[],
 	$gameSet=[],
 	$gameQuestions=[],
@@ -389,6 +391,37 @@ function changeScreen(screenClass, callbackObj){
 		});
 	});
 }
+
+
+// ====================================
+// 				^TIMER
+// ====================================
+
+//Timer functions
+function startViewTimer(){
+	//save current time
+	$startTime=Date.now();
+
+	//reset timer bar position and begin animation
+	$('.game-timer-bar-inner').animate({
+		width:'0%'
+	},$viewTime,'linear');
+
+	//after question time expires
+	$viewTimer=setTimeout(function(){
+		changeScreen('screen-game',{before:initQuestions,after:function(){
+			$('.grid').css('opacity','0');
+		}});
+	},$viewTime);
+
+}
+
+//returns current timer number in ms
+function reportViewTimer(){
+	var elapsedTime=Date.now()-$startTime;
+	return elapsedTime;
+}
+
 
 
 // ====================================
@@ -625,6 +658,7 @@ function fillGrid(){
 	$gameData=[];
 	$questionCount=0;
 	$('.grid').empty();
+	$('.game-timer-bar-inner').css('width','100%');
 
 	//initialize grid to global size and scale
 	$('.grid').css({'width':$areaX*$scale+'px','height':$areaY*$scale+'px'});
@@ -681,12 +715,8 @@ function fillGrid(){
 
 
 	//animate filled grid in
-	$('.grid').animate({'opacity':'1'},3000,function(){
-		setTimeout(function(){
-			changeScreen('screen-game',{before:initQuestions,after:function(){
-				$('.grid').css('opacity','0');
-			}});
-		},$viewTime);
+	$('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
+		startViewTimer();
 	});
 }
 

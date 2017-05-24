@@ -44,8 +44,20 @@ Examples:
 body {
   background: white;
 }
+.screen-grid .game-timer-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+.screen-grid .game-timer-bar .game-timer-bar-inner {
+  height: 20px;
+  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
+  background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
+  width: 100%;
+}
 .grid {
-  margin-top: 68px;
   opacity: 0;
   background: white;
   position: relative;
@@ -171,21 +183,6 @@ body {
 .screen-end .game-answers.clicked .answer.clicked.correct {
   background-color: green;
   color: white;
-}
-.screen-game .game-timer-bar,
-.screen-end .game-timer-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-}
-.screen-game .game-timer-bar .game-timer-bar-inner,
-.screen-end .game-timer-bar .game-timer-bar-inner {
-  height: 20px;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
-  background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
-  width: 100%;
 }
 .game-progress-dots {
   position: fixed;
