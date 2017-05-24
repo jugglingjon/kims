@@ -326,6 +326,13 @@ function toSpaces(text){
 	return text.replace('-','');
 }
 
+//scale element to size
+$.fn.scaleTo = function(target){
+    var widthPercent=1-(this.width()/$(target).width())+1;
+    console.log(widthPercent);
+    this.css('transform','scale('+widthPercent+')');
+};
+
 // ====================================
 // 				^GLOBALS
 // ====================================
@@ -338,9 +345,9 @@ var $scale = 100,
 	$gameSet=[],
 	$gameQuestions=[],
 	$gameData=[],
-	$viewTime=10000,
+	$viewTime=30000,
 	$questionCount=0,
-	$gameLength=10,
+	$gameLength=1,
 	$globalFadeTime=800,
 	$gameCorrectCount=0,
 	$gameScore=0,
@@ -468,6 +475,9 @@ function endGame(){
 			});
 
 			$('.end-history').animate({opacity:'1'});
+
+			$('.grid').css('opacity','1');
+			$('.screen-grid').fadeIn($globalFadeTime);
 		}
 	});
 }
@@ -614,7 +624,8 @@ function fillGrid(){
 	$('.grid').empty();
 
 	//initialize grid to global size and scale
-	$('.grid').css({'width':$areaX*$scale+'px','height':$areaY*$scale+'px'})
+	$('.grid').css({'width':$areaX*$scale+'px','height':$areaY*$scale+'px'});
+	$('.grid').scaleTo('body');
 
 	//for each item:
 	$.each(items, function() {
@@ -667,10 +678,36 @@ function fillGrid(){
 
 //try again button, restart game
 $('body').on('click','.btn-restart',function(){
-	changeScreen('screen-grid',{before:function(){
-		$('.end-history').flickity('destroy').empty().css('opacity','0');
-		fillGrid();
-	}});
+	$('.screen-grid').fadeOut(function(){
+		$('.grid').css('opacity','1');
+
+		changeScreen('screen-grid',{
+			before:function(){
+				$('.end-history').flickity('destroy').empty().css('opacity','0');
+				fillGrid();
+			},
+			after:function(){
+				$('.btn-summaryToggle').removeClass('peeking');
+				$('.end-history-wrapper').css({'opacity':'1'});
+			}
+		});
+	})
+	
+});
+
+//summary toggle button
+$('body').on('click','.btn-summaryToggle',function(){
+	$(this).toggleClass('peeking');
+
+	if($(this).hasClass('peeking')){
+		$('.end-history-wrapper').animate({'opacity':'0'},$globalFadeTime);
+	}
+	else{
+		$('.end-history-wrapper').animate({'opacity':'1'},$globalFadeTime);
+	}
+
+	return false;
+	
 });
 
 var attempt=0;
