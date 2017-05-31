@@ -1,6 +1,7 @@
-var items = [
+/*var items = [
 	{
-		name: "Sunglasses",
+		name: "sunglasses",
+		filename: "sunglasses",
 		x: 4,
 		y: 2,
 		questions:[
@@ -25,7 +26,8 @@ var items = [
 		]
 	},
 	{
-		name: "Card",
+		name: "card",
+		filename: "card",
 		x: 2,
 		y: 3,
 		questions:[
@@ -50,7 +52,8 @@ var items = [
 		]
 	},
 	{
-		name: "Pencil",
+		name: "pencil",
+		filename: "pencil",
 		x: 1,
 		y: 4,
 		questions:[
@@ -64,7 +67,8 @@ var items = [
 		]
 	},
 	{
-		name: "Rock",
+		name: "rock",
+		filename: "rock",
 		x: 2,
 		y: 2,
 		questions:[
@@ -80,7 +84,8 @@ var items = [
 		]
 	},
 	{
-		name: "Battery",
+		name: "battery",
+		filename: "battery",
 		x: 1,
 		y: 2,
 		questions:[
@@ -105,7 +110,8 @@ var items = [
 		]
 	},
 	{
-		name: "Clippers",
+		name: "clippers",
+		filename: "clippers",
 		x: 1,
 		y: 2,
 		questions:[
@@ -120,7 +126,8 @@ var items = [
 		]
 	},
 	{
-		name: "Nail",
+		name: "nail",
+		filename: "nail",
 		x: 1,
 		y: 2,
 		questions:[
@@ -135,7 +142,8 @@ var items = [
 		conflict:"hardware"
 	},
 	{
-		name: "Army Man",
+		name: "army man",
+		filename: "army-man",
 		x: 1,
 		y: 2,
 		questions:[
@@ -165,7 +173,8 @@ var items = [
 		]
 	},
 	{
-		name: "Screw",
+		name: "screw",
+		filename: "screw",
 		x: 1,
 		y: 2,
 		questions:[
@@ -188,7 +197,8 @@ var items = [
 		conflict:"hardware"
 	},
 	{
-		name: "Coin",
+		name: "coin",
+		filename: "coin",
 		x: 1,
 		y: 1,
 		questions:[
@@ -240,7 +250,8 @@ var items = [
 		]
 	},
 	{
-		name: "Grape",
+		name: "grape",
+		filename: "grape",
 		x: 1,
 		y: 1,
 		questions:[
@@ -255,7 +266,8 @@ var items = [
 		]
 	},
 	{
-		name: "Mint",
+		name: "mint",
+		filename: "mint",
 		x: 1,
 		y: 1,
 		questions:[
@@ -270,7 +282,8 @@ var items = [
 			}
 		]
 	}
-];
+];*/
+var items;
 
 // ====================================
 // 				^UTILITIES
@@ -352,7 +365,7 @@ var $scale = 100,
 	$viewTime=30000,
 	$itemCount=10,
 	$questionCount=0,
-	$gameLength=1,
+	$gameLength=10,
 	$globalFadeTime=800,
 	$gameCorrectCount=0,
 	$gameScore=0,
@@ -440,9 +453,9 @@ function randomGrid(size, max) {
 }
 
 //generates a new item's markup with correct size, markup, and image
-var newItem = function(name, x, y) {
+var newItem = function(name, filename, x, y) {
 	var randomRotate=Math.random()*50-25;
-	return $(`<div class="block block-${x}x block-${y}y" style="background-image: url('objects/${toDashes(name.toLowerCase())}.png');transform:rotate(${randomRotate}deg);"></div>`);
+	return $(`<div class="block block-${x}x block-${y}y" style="background-image: url('objects/${filename}.png');transform:rotate(${randomRotate}deg);"></div>`);
 };
 
 // ====================================
@@ -679,7 +692,7 @@ function fillGrid(){
 
 			console.log('\n\nPLACING '+this.name+'\n===================');
 			var add,candidateX,candidateY;
-			add = newItem(this.name, this.x, this.y);
+			add = newItem(this.name,this.filename, this.x, this.y);
 			console.log($exclusion);
 			
 			//attempt to plot item on random grid points, repeat until exclusion tests passes (or 50 attempts)
@@ -760,8 +773,8 @@ $('body').on('click','.btn-summaryToggle',function(){
 
 var attempt=0;
 $(document).ready(function() {
-
-	fillGrid();
-		
-
+	$.getJSON('items.json',function(data){
+		items=data;
+		fillGrid();
+	});
 });

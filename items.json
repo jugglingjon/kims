@@ -1,0 +1,3174 @@
+[
+	{
+		"name": "playing card",
+		"filename": "card_6_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "clubs", "spades"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"king", "10", "7"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "spades", "diamonds"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"ace", "king", "10"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "hearts", "spades"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "jack", "king"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "hearts", "diamonds"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"queen", "8", "jack"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "spades", "hearts"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"7", "8", "queen"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "diamonds", "clubs"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"8", "7", "jack"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "clubs", "hearts"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"ace", "8", "7"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "spades", "diamonds"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"queen", "8", "9"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "hearts", "diamonds"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"queen", "8", "king"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "spades", "clubs"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"jack", "king", "8"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "clubs", "hearts"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"king", "8", "10"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "spades", "clubs"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "9", "jack"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "diamonds", "clubs"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"queen", "7", "ace"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "hearts", "spades"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"jack", "queen", "10"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "hearts", "clubs"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"8", "6", "ace"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "diamonds", "hearts"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "jack", "ace"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "clubs", "diamonds"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"7", "ace", "jack"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "clubs", "diamonds"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"jack", "6", "9"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "spades", "hearts"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "7", "jack"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "diamonds", "spades"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"king", "10", "ace"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "spades", "diamonds"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "queen", "ace"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "hearts", "spades"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"7", "10", "8"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "spades", "diamonds"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"ace", "9", "jack"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_6_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "spades", "hearts"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "jack", "queen"
+			],
+			"answer": "6"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "spades", "diamonds"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "6", "queen"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "hearts", "diamonds"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"6", "9", "10"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "clubs", "spades"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "queen", "ace"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_king_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "clubs", "hearts"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "7", "9"
+			],
+			"answer": "king"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"hearts", "spades", "clubs"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"6", "9", "king"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "spades", "hearts"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"queen", "7", "king"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_spades",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "diamonds", "hearts"
+			],
+			"answer": "spades"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "ace", "6"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "diamonds", "spades"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "queen", "ace"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "diamonds", "hearts"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "ace", "king"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_clubs",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"diamonds", "spades", "hearts"
+			],
+			"answer": "clubs"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "queen", "10"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_hearts",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"clubs", "spades", "diamonds"
+			],
+			"answer": "hearts"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"10", "7", "9"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "playing card",
+		"filename": "card_8_diamonds",
+		"x": 3,
+		"y": 4,
+		"conflict": "playing card",
+		"questions": [{
+			"question": "What suit was the %?",
+			"distractors": [
+				"spades", "clubs", "hearts"
+			],
+			"answer": "diamonds"
+		},
+		{
+			"question": "What card was the %?",
+			"distractors": [
+				"9", "6", "jack"
+			],
+			"answer": "8"
+		}
+	]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_1",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"9","2","4"
+				],
+				"answer":"1"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"purple","green","brown"
+				],
+				"answer":"yellow"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_2",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"3","11","7"
+				],
+				"answer":"2"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"orange","yellow","brown"
+				],
+				"answer":"blue"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_7",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"8","14","15"
+				],
+				"answer":"7"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","blue","yellow"
+				],
+				"answer":"brown"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_5",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"11","6","7"
+				],
+				"answer":"5"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"black","green","yellow"
+				],
+				"answer":"orange"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_12",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"11","13","14"
+				],
+				"answer":"12"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"black","red","orange"
+				],
+				"answer":"purple"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_6",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"11","5","12"
+				],
+				"answer":"6"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"orange","yellow","brown"
+				],
+				"answer":"green"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_14",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"15","5","2"
+				],
+				"answer":"14"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","brown","yellow"
+				],
+				"answer":"green"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_10",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"13","15","1"
+				],
+				"answer":"10"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"purple","brown","yellow"
+				],
+				"answer":"blue"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_5",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"7","10","11"
+				],
+				"answer":"5"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","black","purple"
+				],
+				"answer":"orange"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_12",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"7","3","2"
+				],
+				"answer":"12"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"black","green","yellow"
+				],
+				"answer":"purple"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_11",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"13","8","6"
+				],
+				"answer":"11"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"purple","orange","blue"
+				],
+				"answer":"red"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_10",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"7","15","1"
+				],
+				"answer":"10"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"brown","yellow","red"
+				],
+				"answer":"blue"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_13",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"5","1","15"
+				],
+				"answer":"13"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","black","purple"
+				],
+				"answer":"orange"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_14",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"2","10","11"
+				],
+				"answer":"14"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","black","yellow"
+				],
+				"answer":"green"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_15",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"12","10","11"
+				],
+				"answer":"15"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","black","yellow"
+				],
+				"answer":"brown"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"solid"
+				],
+				"answer":"stripe"
+			}
+		]
+	},
+	{
+		"name": "billiard ball",
+		"filename": "billiardball_4",
+		"x": 3,
+		"y": 3,
+		"conflict":"billiard ball",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"6","5","9"
+				],
+				"answer":"4"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"orange","blue","red"
+				],
+				"answer":"purple"
+			},
+			{
+				"question":"What pattern was the %?",
+				"distractors":[
+					"stripe"
+				],
+				"answer":"solid"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_1",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"8","3","5"
+				],
+				"answer":"1"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","red","green"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_2",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"1","9","3"
+				],
+				"answer":"2"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","yellow"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_3",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"6","5","2"
+				],
+				"answer":"3"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","green","yellow"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_4",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"1","2","6"
+				],
+				"answer":"4"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","blue","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_5",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"3","8","7"
+				],
+				"answer":"5"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","yellow"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_6",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"1","8","4"
+				],
+				"answer":"6"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","yellow","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_7",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"6","3","1"
+				],
+				"answer":"7"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","red","yellow"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_8",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"2","3","7"
+				],
+				"answer":"8"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","red","green"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_9",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What number was the %?",
+				"distractors":[
+					"5","6","8"
+				],
+				"answer":"9"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","green","yellow"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_A",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"W","Z","O"
+				],
+				"answer":"A"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","yellow","green"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_B",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"P","T","Q"
+				],
+				"answer":"B"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","green","red"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_C",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"U","G","L"
+				],
+				"answer":"C"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","blue","green"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_D",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"K","N","B"
+				],
+				"answer":"D"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","yellow","green"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_E",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"A","F","Z"
+				],
+				"answer":"E"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","green","yellow"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_F",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"A","O","Y"
+				],
+				"answer":"F"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","yellow","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_G",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"O","F","T"
+				],
+				"answer":"G"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","blue","green"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_H",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"S","Y","U"
+				],
+				"answer":"H"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","green","red"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_I",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"O","F","R"
+				],
+				"answer":"I"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","yellow","blue"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_J",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"L","R","Y"
+				],
+				"answer":"J"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","red","yellow"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_K",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"M","G","D"
+				],
+				"answer":"K"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","blue"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_L",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"E","F","W"
+				],
+				"answer":"L"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","yellow","green"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_M",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"V","P","H"
+				],
+				"answer":"M"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","yellow","blue"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_N",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"K","V","Y"
+				],
+				"answer":"N"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","yellow","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_O",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"H","E","C"
+				],
+				"answer":"O"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","green","blue"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_P",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"Y","X","W"
+				],
+				"answer":"P"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","yellow"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_Q",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"P","H","I"
+				],
+				"answer":"Q"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","blue","yellow"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_R",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"E","B","L"
+				],
+				"answer":"R"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","red","yellow"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_S",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"J","T","H"
+				],
+				"answer":"S"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","blue","red"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_T",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"Y","F","V"
+				],
+				"answer":"T"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","yellow","green"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_U",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"S","L","O"
+				],
+				"answer":"U"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","blue","green"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_V",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"M","B","J"
+				],
+				"answer":"V"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","blue","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_W",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"D","R","O"
+				],
+				"answer":"W"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","blue"
+				],
+				"answer":"yellow"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_X",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"W","Q","I"
+				],
+				"answer":"X"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","yellow","green"
+				],
+				"answer":"blue"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_Y",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"F","X","W"
+				],
+				"answer":"Y"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"blue","green","yellow"
+				],
+				"answer":"red"
+			}
+		]
+	},
+	{
+		"name": "block",
+		"filename": "block_letter_Z",
+		"x": 2,
+		"y": 2,
+		"conflict":"block",
+		"questions":[
+			{
+				"question":"What letter was the %?",
+				"distractors":[
+					"Y","A","M"
+				],
+				"answer":"Z"
+			},
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"yellow","blue","red"
+				],
+				"answer":"green"
+			}
+		]
+	},
+	{
+		"name": "dice",
+		"filename": "dice_single_green_1",
+		"x": 1,
+		"y": 1,
+		"conflict":"dice",
+		"questions":[
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"red","white","blue"
+				],
+				"answer":"green"
+			},
+			{
+				"question":"What number was showing on the %?",
+				"distractors":[
+					2,4,5
+				],
+				"answer":1
+			}
+		]
+	},
+	{
+		"name": "dice",
+		"filename": "dice_single_red_2",
+		"x": 1,
+		"y": 1,
+		"conflict":"dice",
+		"questions":[
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","white","blue"
+				],
+				"answer":"red"
+			},
+			{
+				"question":"What number was showing on the %?",
+				"distractors":[
+					1,4,5
+				],
+				"answer":2
+			}
+		]
+	},
+	{
+		"name": "dice",
+		"filename": "dice_single_white_4",
+		"x": 1,
+		"y": 1,
+		"conflict":"dice",
+		"questions":[
+			{
+				"question":"What color was the %?",
+				"distractors":[
+					"green","red","blue"
+				],
+				"answer":"white"
+			},
+			{
+				"question":"What number was showing on the %?",
+				"distractors":[
+					1,2,5
+				],
+				"answer":4
+			}
+		]
+	},
+	{
+		"name": "dice",
+		"filename": "dice_4",
+		"x": 3,
+		"y": 3,
+		"conflict":"dice",
+		"questions":[
+			{
+				"question":"How many % were there?",
+				"distractors":[
+					3,5,2
+				],
+				"answer":4
+			},
+			{
+				"question":"How many red % were there?",
+				"distractors":[
+					1,0,3
+				],
+				"answer":2
+			},
+			{
+				"question":"How many green % were there?",
+				"distractors":[
+					2,0,3
+				],
+				"answer":1
+			},
+			{
+				"question":"How many white % were there?",
+				"distractors":[
+					2,0,3
+				],
+				"answer":1
+			},
+			{
+				"question":"What was the total of the %?",
+				"distractors":[
+					10,8,9
+				],
+				"answer":11
+			}
+		]
+	},
+	{
+		"name": "clock",
+		"filename": "clock_red_130",
+		"x": 3,
+		"y": 3,
+		"conflict":"clock",
+		"questions":[
+			{
+				"question":"What color was the border of the %?",
+				"distractors":[
+					"green","black","blue"
+				],
+				"answer":"red"
+			},
+			{
+				"question":"What time was showing on the %?",
+				"distractors":[
+					"2:30","3:30","2:00"
+				],
+				"answer":"1:30"
+			},
+			{
+				"question":"Where was the second-hand on the %?",
+				"distractors":[
+					"Between 1 & 2","Between 10 & 11","Between 9 & 10"
+				],
+				"answer":"Between 11 & 12"
+			},
+			{
+				"question":"What shape were the hour markers on the %?",
+				"distractors":[
+					"Diamonds", "Dashes","Squares"
+				],
+				"answer":"Circles"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_dime_heads",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"tails"
+				],
+				"answer":"heads"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"nickel","quarter","penny"
+				],
+				"answer":"dime"
+			},
+			{
+				"question":"What year was the %?",
+				"distractors":[
+					"2013","2015","2005"
+				],
+				"answer":"2003"
+			},
+			{
+				"question":"What is written on the bottom of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","United States of America"
+				],
+				"answer":"In God We Trust"
+			},
+			{
+				"question":"What is written on the left side of the %?",
+				"distractors":[
+					"In God We Trust", "E Pluribus Unum","United States of America"
+				],
+				"answer":"Liberty"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_dime_tails",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"heads"
+				],
+				"answer":"tails"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"nickel","quarter","penny"
+				],
+				"answer":"dime"
+			},
+			{
+				"question":"What image is shown on the %?",
+				"distractors":[
+					"a building","a President","an eagle"
+				],
+				"answer":"a torch"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","In God We Trust"
+				],
+				"answer":"United States of America"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_nickel_heads",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"tails"
+				],
+				"answer":"heads"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","quarter","penny"
+				],
+				"answer":"nickel"
+			},
+			{
+				"question":"What year was the %?",
+				"distractors":[
+					"1985","2015","2005"
+				],
+				"answer":"1995"
+			},
+			{
+				"question":"What is written on the left side of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","United States of America"
+				],
+				"answer":"In God We Trust"
+			},
+			{
+				"question":"What is written on the right side of the %?",
+				"distractors":[
+					"In God We Trust", "E Pluribus Unum","United States of America"
+				],
+				"answer":"Liberty"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_nickel_tails",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"heads"
+				],
+				"answer":"tails"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","quarter","penny"
+				],
+				"answer":"nickel"
+			},
+			{
+				"question":"What image is shown on the %?",
+				"distractors":[
+					"a torch","a President","an eagle"
+				],
+				"answer":"a building"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"Liberty", "United States of America","In God We Trust"
+				],
+				"answer":"E Pluribus Unum"
+			},
+			{
+				"question":"What is written on the bottom of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","In God We Trust"
+				],
+				"answer":"United States of America"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_penny_heads",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"tails"
+				],
+				"answer":"heads"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","quarter","nickel"
+				],
+				"answer":"penny"
+			},
+			{
+				"question":"What year was the %?",
+				"distractors":[
+					"2005","2016","2015"
+				],
+				"answer":"2006"
+			},
+			{
+				"question":"What is written on the left side of the %?",
+				"distractors":[
+					"In God We Trust", "E Pluribus Unum","United States of America"
+				],
+				"answer":"Liberty"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","United States of America"
+				],
+				"answer":"In God We Trust"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_penny_tails",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"heads"
+				],
+				"answer":"tails"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","quarter","nickel"
+				],
+				"answer":"penny"
+			},
+			{
+				"question":"What image is shown on the %?",
+				"distractors":[
+					"a torch","a President","an eagle"
+				],
+				"answer":"a building"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","In God We Trust"
+				],
+				"answer":"United States of America"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_quarter_heads",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"tails"
+				],
+				"answer":"heads"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","penny","nickel"
+				],
+				"answer":"quarter"
+			},
+			{
+				"question":"What year was the %?",
+				"distractors":[
+					"1988","1994","1998"
+				],
+				"answer":"1984"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"In God We Trust", "E Pluribus Unum","United States of America"
+				],
+				"answer":"Liberty"
+			},
+			{
+				"question":"What is written on the left side of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","United States of America"
+				],
+				"answer":"In God We Trust"
+			}
+		]
+	},
+	{
+		"name": "coin",
+		"filename": "coin_quarter_tails",
+		"x": 2,
+		"y": 2,
+		"conflict":"coin",
+		"questions":[
+			{
+				"question":"Which side was facing up on the %?",
+				"distractors":[
+					"heads"
+				],
+				"answer":"tails"
+			},
+			{
+				"question":"What was the denomination of the %?",
+				"distractors":[
+					"dime","penny","nickel"
+				],
+				"answer":"quarter"
+			},
+			{
+				"question":"What image is shown on the %?",
+				"distractors":[
+					"a torch","a President","a building"
+				],
+				"answer":"an eagle"
+			},
+			{
+				"question":"What is written on the top of the %?",
+				"distractors":[
+					"Liberty", "E Pluribus Unum","In God We Trust"
+				],
+				"answer":"United States of America"
+			}
+		]
+	},
+	{
+					"name": "button",
+					"filename": "button_blue",
+					"x": 2,
+					"y": 2,
+					"conflict":"button",
+					"questions":[
+					{
+						"question":"How many holes were in the %?",
+						"distractors":[
+							"4"
+						],
+						"answer":"2"
+					},
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"brown","orange","green"
+						],
+						"answer":"blue"
+					}
+				]
+			},
+				{
+					"name": "button",
+					"filename": "button_brown",
+					"x": 2,
+					"y": 2,
+					"conflict":"button",
+					"questions":[
+					{
+						"question":"How many holes were in the %?",
+						"distractors":[
+							"2"
+						],
+						"answer":"4"
+					},
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","orange","yellow"
+						],
+						"answer":"brown"
+					}
+				]
+			},
+				{
+					"name": "button",
+					"filename": "button_green",
+					"x": 2,
+					"y": 2,
+					"conflict":"button",
+					"questions":[
+					{
+						"question":"How many holes were in the %?",
+						"distractors":[
+							"4"
+						],
+						"answer":"2"
+					},
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"brown","yellow","blue"
+						],
+						"answer":"green"
+					}
+				]
+			},
+				{
+					"name": "button",
+					"filename": "button_orange",
+					"x": 2,
+					"y": 2,
+					"conflict":"button",
+					"questions":[
+					{
+						"question":"How many holes were in the %?",
+						"distractors":[
+							"4"
+						],
+						"answer":"2"
+					},
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","red","yellow"
+						],
+						"answer":"orange"
+					}
+				]
+			},
+				{
+					"name": "button",
+					"filename": "button_yellow",
+					"x": 2,
+					"y": 2,
+					"conflict":"button",
+					"questions":[
+					{
+						"question":"How many holes were in the %?",
+						"distractors":[
+							"2"
+						],
+						"answer":"4"
+					},
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"red","black","orange"
+						],
+						"answer":"yellow"
+					}
+				]
+			},
+			{
+				"name": "button",
+				"filename": "button_black",
+				"x": 2,
+				"y": 2,
+				"conflict":"button",
+				"questions":[
+				{
+					"question":"How many holes were in the %?",
+					"distractors":[
+						"2"
+					],
+					"answer":"4"
+				},
+				{
+					"question":"What color was the %?",
+					"distractors":[
+						"red","brown","blue"
+					],
+					"answer":"black"
+				}
+			]
+		},
+		{
+				"name": "poker chip",
+				"filename": "poker_chip_black",
+				"x": 2,
+				"y": 2,
+				"conflict":"poker chip",
+				"questions":[
+				{
+					"question":"What color was the %?",
+					"distractors":[
+						"brown","blue","yellow"
+					],
+					"answer":"black"
+				}
+			]
+		},
+			{
+				"name": "poker chip",
+				"filename": "poker_chip_blue",
+				"x": 2,
+				"y": 2,
+				"conflict":"poker chip",
+				"questions":[
+				{
+					"question":"What color was the %?",
+					"distractors":[
+						"yellow","black","orange"
+					],
+					"answer":"blue"
+				}
+			]
+		},
+			{
+				"name": "poker chip",
+				"filename": "poker_chip_green",
+				"x": 2,
+				"y": 2,
+				"conflict":"poker chip",
+				"questions":[
+				{
+					"question":"What color was the %?",
+					"distractors":[
+						"brown","red","yellow"
+					],
+					"answer":"green"
+				}
+			]
+		},
+			{
+				"name": "poker chip",
+				"filename": "poker_chip_red",
+				"x": 2,
+				"y": 2,
+				"conflict":"poker chip",
+				"questions":[
+				{
+					"question":"What color was the %?",
+					"distractors":[
+						"yellow","blue","brown"
+					],
+					"answer":"red"
+				}
+			]
+		},
+		{
+					"name": "paper clip",
+					"filename": "paperclip_blue",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","yellow","red"
+						],
+						"answer":"blue"
+					}
+				]
+			},
+				{
+					"name": "paper clip",
+					"filename": "paperclip_green",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","blue","yellow"
+						],
+						"answer":"green"
+					}
+				]
+			},
+				{
+					"name": "paper clip",
+					"filename": "paperclip_orange",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","blue","yellow"
+						],
+						"answer":"orange"
+					}
+				]
+			},
+				{
+					"name": "paper clip",
+					"filename": "paperclip_pink",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","orange","yellow"
+						],
+						"answer":"pink"
+					}
+				]
+			},
+				{
+					"name": "paper clip",
+					"filename": "paperclip_red",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","yellow","orange"
+						],
+						"answer":"red"
+					}
+				]
+			},
+				{
+					"name": "paper clip",
+					"filename": "paperclip_yellow",
+					"x": 1,
+					"y": 2,
+					"conflict":"paper clip",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","brown","orange"
+						],
+						"answer":"yellow"
+					}
+				]
+			},
+			{
+					"name": "tack",
+					"filename": "tack_blue",
+					"x": 1,
+					"y": 1,
+					"conflict":"tack",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"orange","black","green"
+						],
+						"answer":"blue"
+					}
+				]
+			},
+				{
+					"name": "tack",
+					"filename": "tack_green",
+					"x": 1,
+					"y": 1,
+					"conflict":"tack",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","brown","blue"
+						],
+						"answer":"green"
+					}
+				]
+			},
+				{
+					"name": "tack",
+					"filename": "tack_orange",
+					"x": 1,
+					"y": 1,
+					"conflict":"tack",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"red","brown","black"
+						],
+						"answer":"orange"
+					}
+				]
+			},
+				{
+					"name": "tack",
+					"filename": "tack_red",
+					"x": 1,
+					"y": 1,
+					"conflict":"tack",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"yellow","black","blue"
+						],
+						"answer":"red"
+					}
+				]
+			},
+			{
+					"name": "crayon",
+					"filename": "crayon_blue",
+					"x": 4,
+					"y": 1,
+					"conflict":"crayon",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"brown","green","yellow"
+						],
+						"answer":"blue"
+					}
+				]
+			},
+				{
+					"name": "crayon",
+					"filename": "crayon_brown",
+					"x": 4,
+					"y": 1,
+					"conflict":"crayon",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","green","red"
+						],
+						"answer":"brown"
+					}
+				]
+			},
+				{
+					"name": "crayon",
+					"filename": "crayon_green",
+					"x": 4,
+					"y": 1,
+					"conflict":"crayon",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"yellow","black","red"
+						],
+						"answer":"green"
+					}
+				]
+			},
+				{
+					"name": "crayon",
+					"filename": "crayon_purple",
+					"x": 4,
+					"y": 1,
+					"conflict":"crayon",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"black","green","orange"
+						],
+						"answer":"purple"
+					}
+				]
+			},
+				{
+					"name": "crayon",
+					"filename": "crayon_red",
+					"x": 4,
+					"y": 1,
+					"conflict":"crayon",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"orange","brown","green"
+						],
+						"answer":"red"
+					}
+				]
+			},
+			{
+					"name": "ticket",
+					"filename": "ticket_blue",
+					"x": 3,
+					"y": 2,
+					"conflict":"ticket",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"red","orange","brown"
+						],
+						"answer":"blue"
+					},
+					{
+						"question":"What number was on the %?",
+						"distractors":[
+							"4051","6113","4829"
+						],
+						"answer":"6831"
+					}
+				]
+			},
+				{
+					"name": "ticket",
+					"filename": "ticket_green",
+					"x": 3,
+					"y": 2,
+					"conflict":"ticket",
+					"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"orange","red","brown"
+						],
+						"answer":"green"
+					},
+					{
+						"question":"What number was on the %?",
+						"distractors":[
+							"6113","4051","4829"
+						],
+						"answer":"6831"
+					}
+				]
+			},
+			{
+				"name": "ticket",
+				"filename": "ticket_red",
+				"x": 3,
+				"y": 2,
+				"conflict":"ticket",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","orange","blue"
+						],
+						"answer":"red"
+					},
+					{
+						"question":"What number was on the %?",
+						"distractors":[
+							"4051","6113","4829"
+						],
+						"answer":"6831"
+					}
+				]
+			},
+			{
+				"name": "pen",
+				"filename": "pen_blue",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","black","red"
+						],
+						"answer":"blue"
+					}
+				]
+			},
+			{
+				"name": "pen",
+				"filename": "pen_red",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","black","blue"
+						],
+						"answer":"red"
+					}
+				]
+			},
+			{
+				"name": "pen",
+				"filename": "pen_silver",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","black","red"
+						],
+						"answer":"silver"
+					}
+				]
+			},
+			{
+				"name": "pen",
+				"filename": "pen_yellow_and_blue",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"blue with a yellow cap","red with a black cap","black with a red cap"
+						],
+						"answer":"yellow with a blue cap"
+					}
+				]
+			},
+			{
+				"name": "pencil",
+				"filename": "pencil_yellow",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"green","red","white"
+						],
+						"answer":"yellow"
+					},
+					{
+						"question":"What color was the %'s eraser?",
+						"distractors":[
+							"pink","red","green"
+						],
+						"answer":"white"
+					}
+				]
+			},
+			{
+				"name": "highlighter",
+				"filename": "highlighter_orange",
+				"x": 1,
+				"y": 6,
+				"conflict":"pen",
+				"questions":[
+					{
+						"question":"What color was the %?",
+						"distractors":[
+							"yellow","red","green"
+						],
+						"answer":"orange"
+					}
+				]
+			}
+]
