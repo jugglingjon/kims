@@ -83,6 +83,12 @@ body {
 .grid .block-4x {
   width: 400px;
 }
+.grid .block-5x {
+  width: 500px;
+}
+.grid .block-6x {
+  width: 600px;
+}
 .grid .block-1y {
   height: 100px;
 }
@@ -94,6 +100,12 @@ body {
 }
 .grid .block-4y {
   height: 400px;
+}
+.grid .block-5y {
+  height: 500px;
+}
+.grid .block-6y {
+  height: 600px;
 }
 .screen-game {
   padding: 60px 40px 40px 40px;
