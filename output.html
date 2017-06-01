@@ -22,7 +22,7 @@
 		}
 
 		hr{
-			border:1px solid black;
+			border:1px solid black; 
 		}
 	</style>
 
@@ -47,7 +47,7 @@
 				output.append('<img src="objects/'+currentItem.filename+'.png"><br>');
 				$.each(this.questions,function(){
 					output.append('<br><strong>'+this.question.replace('%',currentItem.name)+'</strong><br>');
-					output.append('<span style="color:green;">'+this.answer+'</span><br>');
+					output.append('<span style="color:green;font-style:bold;">'+this.answer+'*</span><br>');
 					$.each(this.distractors,function(){
 						output.append('<span style="color:red;">'+this+'</span><br>');
 					});
