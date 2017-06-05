@@ -263,6 +263,7 @@ body {
   position: relative;
   -webkit-transform-origin: top left;
           transform-origin: top left;
+  overflow: hidden;
 }
 .grid .block {
   display: block;
