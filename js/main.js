@@ -181,7 +181,7 @@ function gridToPixels(grid) {
 
 //returns a random valid grid point based on size of object and maximum possible
 function randomGrid(size, max) {
-	var tempMax = max - size;
+	var tempMax = max - size + 1;
 	return Math.floor(Math.random() * tempMax);
 }
 
