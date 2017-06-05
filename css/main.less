@@ -550,6 +550,10 @@ body{
 		z-index:10;
 		top: @lessPadding*2;
 		right: @lessPadding*2;
+
+		font-size: 16px;
+		padding: 12px 14px;
+		min-width: auto;
 	}
 
 	.flickity-viewport{
@@ -622,13 +626,14 @@ body{
 
 			.game-data{
 				width: 540px;
-				height: 405px;
+				height: 425px;
 				padding: @lessPadding*2;
 				margin-right: 2*@basePadding;
 				overflow:visible;
 
 				background: url('../img/game-background.jpg') no-repeat;
 				background-size: cover;
+				box-shadow: 0 0 12px 0 #1B190E;
 
 				.game-count{
 					font-size: 14px;
@@ -681,21 +686,6 @@ body{
 
 				.game-progress-dots{
 					display:none;
-				}
-
-				&::after{
-					content: '';
-					display: block;
-					position: absolute;
-					z-index: -1;
-					bottom: -20px;
-					height: 5px;
-					border-radius: 50%;
-					background: rgba(0,0,0,.2);
-					right: 20px;
-					left: 20px;
-					box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
-					opacity: 1;
 				}
 			}
 		}
