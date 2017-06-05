@@ -250,6 +250,9 @@ function endGame(){
 
 	//nav to end screen and start flickity when shown
 	changeScreen('screen-end',{
+		before:function(){
+			$('.btn-quit').fadeOut($globalFadeTime);
+		},
 		after:function(){
 			$('.end-history').flickity({
 				prevNextButtons: false,
@@ -288,6 +291,10 @@ function advanceGame(){
 
 function askQuestion(index){
 	var currentQuestion=$gameQuestions[index];
+
+	//update quesiton count
+	$('.game-count .count-current').text(index+1);
+	$('.game-count .count-total').text($gameLength);
 
 	//populate question text
 	$('.game-question').text(currentQuestion.question);
@@ -460,10 +467,11 @@ function fillGrid(){
 			
 	});
 
-
+	$('.btn-quit').fadeIn($globalFadeTime);
 	//animate filled grid in
 	countdown(function(){
 		$('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
+			
 			startViewTimer();
 		});
 	});
@@ -542,7 +550,9 @@ $('body').on('click','.btn-quit',function(){
 	clearTimeout($viewTimer);
 	
 	clearInterval($countdown);
-	changeScreen('screen-difficulty',{after:function(){
+	changeScreen('screen-difficulty',{before:function(){
+		$('.btn-quit').fadeOut($globalFadeTime);
+	},after:function(){
 		$('.game-timer-bar-inner').stop().css('width','100%');
 		$('.grid').css('opacity','0');
 	}});

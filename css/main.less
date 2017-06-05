@@ -77,7 +77,7 @@ Examples:
 //text sizes
 @text-small: 12px;
 @text-base: 16px;
-@text-medium: 22px;
+@text-medium: 20px;
 @text-large: 28px;
 @text-huge: 34px;
 
@@ -128,6 +128,50 @@ body{
 	background: url('../img/game-background.jpg') no-repeat;
 	background-size: cover;
 	font-family: 'Roboto',Helvetica,Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: @text-base;
+}
+
+.btn{
+	border-width: 2px;
+	padding: 14px 20px;
+	border-radius:0;
+	min-width: 220px;
+
+	font-size: @text-medium;
+	font-weight: @semibold;
+	text-transform: uppercase;
+
+	
+
+	&.btn-primary{
+		background: @brandHightlight;
+		border-color: @brandHightlight;
+		color: @brandText;
+	}
+
+	&.btn-secondary{
+		background: rgba(27,25,14,0.40);
+		border-color: rgba(175,172,143,0.50);
+		color: #EFEFED;
+	}
+}
+
+.btn-quit{
+	display:none;
+	position: fixed;
+	z-index:100;
+	
+	left: @lessPadding;
+	top: 25px;
+
+	font-size: 20px;
+	text-transform:uppercase;
+	color: @brandText;
+
+	&:hover, &:active{
+		text-decoration:none;
+	}
 }
 
 
@@ -152,6 +196,98 @@ body{
 		right:0;
 		bottom:0;
 
+		text-align:center;
+
+		img{
+			width: 580px;
+			margin-top: 250px;
+		}
+
+		h3{
+			font-size: 24px;
+			color:white;
+			font-weight:normal;
+			margin-bottom:200px;
+
+		}
+
+		@keyframes pulse{
+			0% {
+				opacity: .4;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+
+		h4{
+			color: @brandHightlight;
+			text-transform:uppercase;
+			font-size: 28px;
+			font-weight: 100;
+			animation-name: pulse;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+	}
+
+	.difficulty-settings{
+		text-align:center;
+		color: #EFEFED;
+
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+
+		.instructions{
+			
+
+			h2{
+				font-family: 'Roboto Condensed';
+				font-weight: bold;
+				font-size: 52px;
+				text-transform:uppercase;
+			}
+
+			p{
+				color: white;
+				font-weight: regular;
+			}
+		}
+
+		.options{
+
+			margin-top: @lessPadding;
+			margin-bottom: @lessPadding;
+
+			input{
+				display:none;
+				
+				&:checked + label{
+					border: 2px solid #B1CF3B;
+					box-shadow: 0 0 6px 0 #B1CF3B;
+				}
+			}
+			label{
+				width: 220px;
+				display:inline-block;
+				margin: 0 10px;
+
+				span{
+					font-weight: normal;
+				}
+			}
+		}
+
+		.begin{
+			.btn{
+				margin-top: 32px;
+
+				font-size: 26px;
+			}
+		}
 	}
 
 }
@@ -201,13 +337,7 @@ body{
 		}
 	}
 
-	.btn-quit{
-		position: absolute;
-		z-index:100;
-		
-		left: @lessPadding;
-		top: @lessPadding*2;
-	}
+
 }
 
 .grid{
@@ -285,12 +415,23 @@ body{
 }
 
 .screen-game,.screen-end{
+
+	.game-count{
+		position: absolute;
+		top:25px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		font-weight: @semibold;
+		font-size: 17px;
+	}
 	
 	.game-question-wrapper{
 		display:table;
 		width: 100%;
-		height: 185px;
+		height: 165px;
 		margin-bottom: @lessPadding*2;
+		margin-top: @lessPadding;
 
 		.game-question{
 			display: table-cell;
@@ -460,18 +601,19 @@ body{
 	}
 
 	.end-history-wrapper{
-		padding: @lessPadding*2 0;
+		padding: 130px 0 40px 0;
 		height: 768px;
 		overflow:hidden;
 
-		background: rgba(0,0,0,.8);
+		/* Rectangle 7: */
+		background: fade(#1B190E,80%);
 
 
 		h3{
 			margin:0;
-			color: @uiGreyMedium;
-			text-transform:uppercase;
+			color: #fff;
 			text-align:center;
+			font-size: 36px;
 		}
 
 
@@ -479,14 +621,21 @@ body{
 			margin-top: @lessPadding;
 
 			.game-data{
-				width: 500px;
-				height: 510px;
+				width: 540px;
+				height: 405px;
 				padding: @lessPadding*2;
 				margin-right: 2*@basePadding;
 				overflow:visible;
+
+				background: url('../img/game-background.jpg') no-repeat;
+				background-size: cover;
+
+				.game-count{
+					font-size: 14px;
+				}
 				
 				.game-question-wrapper{
-					height: 210px;
+					height: 100px;
 					
 					margin-bottom: @lessPadding/2;
 
@@ -509,12 +658,12 @@ body{
 					width: 100%;
 					
 					.answer{
-						width: 205px;
+						width: 225px;
 						height: 100px;
 						margin:0 10px 10px 0;
 						padding: @lessPadding/2;
 
-						font-size: 14px;
+						font-size: 18px;
 
 						&:nth-child(2n){
 							margin-right:0;
@@ -559,9 +708,11 @@ body{
 		bottom:0;
 		right:0;
 		left:0;
-
 		padding: @lessPadding;
+
 		text-align:center;
+		opacity: 0.9;
+		background: #1B190E;
 
 		.btn{
 			margin: 0 @lessPadding/2;

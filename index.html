@@ -16,30 +16,57 @@
 	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
-	
+	<a href="#" class="btn-quit">Quit</a>
 	<div class="screen screen-difficulty">
 		<div class="splash">
-			<h1>Kims Game</h1>
-			<h4>Tap to begin</h4>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="img/logo.png" class="logo">
+						<h3>Improve your memory and observation skills.</h3>
+
+						<h4>Tap Screen to Play</h4>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<div class="difficulty-settings" style="display:none;">
-			<input type="radio" id="difficulty_set-easy" name="difficulty_set" value="45">
-			<label for="difficulty_set-easy">Easy (45 secs)</label>
-
-			<input type="radio" id="difficulty_set-medium" name="difficulty_set" value="30">
-			<label for="difficulty_set-medium">Medium (30 secs)</label>
-
-			<input type="radio" id="difficulty_set-hard" name="difficulty_set" value="15" checked>
-			<label for="difficulty_set-hard">Hard (15 secs)</label>
 			
-			<a href="#" class="btn-begin btn-primary">Play Game</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 instructions">
+						<h2>How to Play</h2>
+						<p>A group of random objects will be shown on the following screen. You’ll get a certain amount of time to observe these objects based on the selected difficulty. Try and remember as many details as possible. After time runs out, you’ll be given ten multiple choice questions to test your memory and observation skills.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 options">
+						<input type="radio" id="difficulty_set-easy" name="difficulty_set" value="45">
+						<label for="difficulty_set-easy" class="btn-secondary btn">Easy <span>(45 secs)</span></label>
+
+						<input type="radio" id="difficulty_set-medium" name="difficulty_set" value="30">
+						<label for="difficulty_set-medium" class="btn-secondary btn">Medium <span>(30 secs)</span></label>
+
+						<input type="radio" id="difficulty_set-hard" name="difficulty_set" value="15" checked>
+						<label for="difficulty_set-hard" class="btn-secondary btn">Hard <span>(15 secs)</span></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 begin">
+						<p><em>Choose difficulty and select play game to begin.</em></p>
+						<a href="#" class="btn-begin btn btn-primary">Play Game</a>
+					</div>
+				</div>
+			</div>
+			
+			
 		</div>
 		
 	</div> 
 
 	<div class="screen screen-grid" style="display:none;">
-		<a href="#" class="btn-quit">Quit</a>
+	
 		<div class="count"><span class="number"></span></div>
 		<div class="grid"></div>
 		<div class="game-timer-bar"><div class="game-timer-bar-inner"></div></div>
@@ -48,6 +75,9 @@
 	<div class="screen screen-game" style="display:none;">
 		
 		<div class="game-data clearfix">
+			<div class="game-count">
+				<span class="count-current"></span> of <span class="count-total"></span>
+			</div>
 			<div class="game-question-wrapper">
 				<h2 class="game-question"></h2>
 			</div>
@@ -63,17 +93,17 @@
 	</div>  
 
 	<div class="screen screen-end" style="display:none;">
-		<a href="#" class="btn btn-primary btn-summaryToggle">Toggle Summary</a>
+		<a href="#" class="btn btn-secondary btn-summaryToggle">Toggle Summary</a>
 		<div class="end-history-wrapper">
-			<h3>You got <span class="correct-score-count"></span>/<span class="correct-score-total"></span> correct</h3>
+			<h3>You got <span class="correct-score-count"></span>/<span class="correct-score-total"></span> correct!</h3>
 			<div class="end-history" style="opacity:0;">
 				
 			</div>
 		</div>
 		
 		<div class="end-footer">
-			<a href="#" class="btn-restart btn btn-primary">Try Again</a>
-			<a href="#" class="btn-change btn btn-primary">Change Difficulty</a>	
+			<a href="#" class="btn-change btn btn-secondary">Change Difficulty</a>	
+			<a href="#" class="btn-restart btn btn-primary">Play Again</a>
 		</div>
 		
 	</div> 
