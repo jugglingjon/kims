@@ -53,24 +53,15 @@ Examples:
 // 				^Variables
 // ====================================
 
-//backgrounds
-@background: linear-gradient(to top, @backgroundGradientStart 0%,@backgroundGradientEnd 100%);
-@backgroundGradientStart: #2D3A4D;
-@backgroundGradientEnd: #36647B;
+//progress bars/indicators
+@progressDark: #454338;
+@progressLight: rgba(27,25,14,0.25);
 
-
-//header
-@headerGradientStart: #3DB0B6;
-@headerGradientEnd: #33A1C1;
-
-//progress bars
-@progressDark: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
-@progressDarkBack: #182A32;
-@progressDarkBorder: #ACACAC;
-
-@progressLight: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
-@progressLightBack: #B7B7B7;
-@progressLightBorder: #959595;
+//brand
+@brandText: #302F25;
+@brandHightlight: #B1CF3B;
+@brandDark: #1B190E;
+@brandMedium: #6A6654;
 
 //ui greys
 @uiGreyLight: #EEEEEE;
@@ -78,12 +69,6 @@ Examples:
 @uiGreyDark: #707070;
 @uiGreyHeavy: #282727;
 @gradientLight: linear-gradient(to bottom, @uiGreyLight 0%,@uiGreyMedium 100%);
-
-//highlights
-@highlightDeep: #2d475c;
-@highlightMuted: fadeout(#AADFFA,43%);
-@highlight: #1ba1c3;
-@highlightMiddle: #056db6;
 
 //generic
 @text:white;
@@ -94,26 +79,86 @@ Examples:
 @text-base: 16px;
 @text-medium: 22px;
 @text-large: 28px;
-@text-huge: 36px;
+@text-huge: 34px;
 
 //paddings
 @basePadding: 30px;
 @lessPadding: 20px;
 
+
+// ====================================
+// 				^Fonts
+// ====================================
+
+.custom-font(@family: arial, @weight: normal, @style: normal, @filename){
+    @font-face{
+        font-family: @family;
+        src:url('../fonts/@{filename}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.custom-font('Roboto',100,normal,'Roboto 100');
+.custom-font('Roboto',normal,normal,'Roboto 300');
+.custom-font('Roboto',normal,italic,'Roboto 300italic');
+.custom-font('Roboto',500,normal,'Roboto 500');
+.custom-font('Roboto',bold,normal,'Roboto 700');
+
+.custom-font('Roboto Condensed',300,normal,'Roboto Condensed regular');
+.custom-font('Roboto Condensed',bold,normal,'Roboto Condensed 700');
+
+
 //weights
-@light: 300;
+@light: 100;
 @normal: normal;
-@semibold: 600;
+@semibold: 500;
 @bold: bold;
+
+[class^="triviaIcon-"], [class*=" triviaIcon-"] {
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
 
 
 // ====================================
-// 				User Styles
+// 				General
 // ====================================
 
 body{
-	background:white;
+	background: url('../img/game-background.jpg') no-repeat;
+	background-size: cover;
+	font-family: 'Roboto',Helvetica,Arial,sans-serif;
 }
+
+
+// ====================================
+// 				Difficulty/splash
+// ====================================
+
+.screen-difficulty{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+
+	background: url('../img/splash-background.jpg') no-repeat;
+	background-size: cover;
+
+	.splash{
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+
+	}
+
+}
+
+// ====================================
+// 				Grid
+// ====================================
 
 .screen-grid{
 	.game-timer-bar{
@@ -121,21 +166,53 @@ body{
 		top:0;
 		left:0;
 		right:0;
+		height: 12px;
 
-		height: 20px;
+		background: @progressLight;
 
 		.game-timer-bar-inner{
-			height:20px;
-			background: @progressDark;
+			height:12px;
 			width:100%;
+
+			background: @progressDark;
 		}
+	}
+
+	.count{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+
+		.number{
+			position: absolute;
+			width:100%;
+			top:50%;
+			transform: translateY(-50%);
+
+			font-family: 'Roboto Condensed';
+			text-align:center;
+			font-size:400px;
+			text-shadow: 0 0 40px rgba(48,47,37,0.20);
+
+			color: #FFFFFF;
+
+		}
+	}
+
+	.btn-quit{
+		position: absolute;
+		z-index:100;
+		
+		left: @lessPadding;
+		top: @lessPadding*2;
 	}
 }
 
 .grid{
 	margin-top: 50px;
 	opacity:0;
-	background:white;
 	position:relative;
 	transform-origin: top left;
 
@@ -144,7 +221,7 @@ body{
 		position: absolute;
 		color:white;
 		background-size:cover;
-		
+
 		filter: drop-shadow(0px 0px 6px #555);
 	}
 	.block-1x {
@@ -204,7 +281,7 @@ body{
 // ====================================
 
 .screen-game{
-	padding: @lessPadding*2+20 @lessPadding*2 @lessPadding*2 @lessPadding*2;
+	padding: @lessPadding*2 @lessPadding*2 @lessPadding*2 @lessPadding*2;
 }
 
 .screen-game,.screen-end{
@@ -212,50 +289,26 @@ body{
 	.game-question-wrapper{
 		display:table;
 		width: 100%;
-		height: 216px;
+		height: 185px;
 		margin-bottom: @lessPadding*2;
 
 		.game-question{
 			display: table-cell;
 			width: 100%;
-			font-size: 50px;
-			color:black;
-			font-weight:@light;
+			
+			font-size: 54px;
+			font-weight: @semibold;
+			color: @brandText;
 			text-align:center;
 			vertical-align:middle;
 		}
 	}
 	
-	.game-image{
-		height: 424px;
-		position: relative;
-		margin-bottom: @lessPadding*2;
-
-		background-size:cover;
-		background-position: center center;
-
-		.game-question{
-			position: absolute;
-			bottom:0;
-			right:0;
-			left:0;
-			padding: @lessPadding*2;
-			margin:0;
-
-			background-color: rgba(0,0,0,.7);
-			font-size: 30px;
-			color:white;
-			font-weight: @light;
-			text-align: center;
-		}
-	}
-
 	.game-answers{
 		width: 688px;
 		margin: 0 auto;
 
 		.answer{
-			background-color:@uiGreyLight;
 			display:table;
 			float:left;
 			margin: 0 @lessPadding @lessPadding 0;
@@ -266,10 +319,15 @@ body{
 			&:nth-child(2n){
 				margin-right:0;
 			}
-			
+
 			font-size: @text-huge;
+			font-weight: @semibold;
 			text-align:center;
-			color:@highlightMiddle;
+			color: @brandText;
+
+			background: rgba(255,255,255,0.25);
+			border: 4px solid #FFFFFF;
+			box-shadow: 0 0 8px 0 rgba(0,0,0,0.20);
 
 			&:active,&:hover{
 				text-decoration: none;
@@ -285,18 +343,22 @@ body{
 	.game-answers.clicked{
 		.answer{
 			&.clicked{
-				background-color:red;
-				color:white;
+				/* Rectangle 2 Copy 5: */
+				background: rgba(255,61,61,0.10);
+				border: 4px solid #FF3D3D;
+				box-shadow: 0 0 8px 0 rgba(0,0,0,0.20);
 			}
 
 			&.correct{
-				background-color:green;
-				color:white;
+				background: rgba(177,207,59,0.10);
+				border: 4px solid #B1CF3B;
+				box-shadow: 0 0 8px 0 rgba(0,0,0,0.20);
 			}
 
 			&.clicked.correct{
-				background-color:green;
-				color:white;
+				background: rgba(177,207,59,0.10);
+				border: 4px solid #B1CF3B;
+				box-shadow: 0 0 8px 0 rgba(0,0,0,0.20);
 			}
 		}
 	}
@@ -311,22 +373,21 @@ body{
 	left:0;
 
 	text-align:center;
+
 	.game-progress-dot{
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
+		width: 15px;
+		height: 15px;
 
 		display:inline-block;
 		margin: @lessPadding/4;
-		background-color: #fff;
-		opacity: .2;
+		background: @progressLight;
 
 		&.past{
-			opacity: .6;
+			background: @progressDark;
 		}
 
 		&.current{
-			opacity: 1;
+			background: @progressDark;
 		}
 	}
 
@@ -366,7 +427,6 @@ body{
 
 	.end-scores{
 		padding: @lessPadding*2 0;
-		background: @background;
 		.clearfix;
 
 		.end-score-wrapper{
@@ -385,7 +445,6 @@ body{
 				margin-top:0;
 				margin-bottom: @lessPadding/2;
 
-				color: @highlight;
 				font-size: 70px;
 				font-weight: @light;
 			}
@@ -425,8 +484,6 @@ body{
 				padding: @lessPadding*2;
 				margin-right: 2*@basePadding;
 				overflow:visible;
-
-				background: @background;
 				
 				.game-question-wrapper{
 					height: 210px;
@@ -505,7 +562,6 @@ body{
 
 		padding: @lessPadding;
 		text-align:center;
-		background-color: @highlightDeep;
 
 		.btn{
 			margin: 0 @lessPadding/2;

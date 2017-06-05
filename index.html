@@ -17,7 +17,30 @@
 </head>
 <body>
 	
-	<div class="screen screen-grid">
+	<div class="screen screen-difficulty">
+		<div class="splash">
+			<h1>Kims Game</h1>
+			<h4>Tap to begin</h4>
+		</div>
+		
+		<div class="difficulty-settings" style="display:none;">
+			<input type="radio" id="difficulty_set-easy" name="difficulty_set" value="45">
+			<label for="difficulty_set-easy">Easy (45 secs)</label>
+
+			<input type="radio" id="difficulty_set-medium" name="difficulty_set" value="30">
+			<label for="difficulty_set-medium">Medium (30 secs)</label>
+
+			<input type="radio" id="difficulty_set-hard" name="difficulty_set" value="15" checked>
+			<label for="difficulty_set-hard">Hard (15 secs)</label>
+			
+			<a href="#" class="btn-begin btn-primary">Play Game</a>
+		</div>
+		
+	</div> 
+
+	<div class="screen screen-grid" style="display:none;">
+		<a href="#" class="btn-quit">Quit</a>
+		<div class="count"><span class="number"></span></div>
 		<div class="grid"></div>
 		<div class="game-timer-bar"><div class="game-timer-bar-inner"></div></div>
 	</div>     
@@ -50,7 +73,7 @@
 		
 		<div class="end-footer">
 			<a href="#" class="btn-restart btn btn-primary">Try Again</a>
-			<a href="#" class="btn-gameover btn btn-primary">Quit</a>	
+			<a href="#" class="btn-change btn btn-primary">Change Difficulty</a>	
 		</div>
 		
 	</div> 

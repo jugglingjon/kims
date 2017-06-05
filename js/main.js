@@ -59,7 +59,6 @@ function toSpaces(text){
 //scale element to size
 $.fn.scaleTo = function(target){
     var widthPercent=1-(this.width()/$(target).width())+1;
-    console.log(widthPercent);
     this.css('transform','scale('+widthPercent+')');
 };
 
@@ -78,6 +77,8 @@ var $scale = 100,
 	$gameQuestions=[],
 	$gameData=[],
 	$viewTime=30000,
+	$count=3,
+	$countdown,
 	$itemCount=10,
 	$questionCount=0,
 	$gameLength=10,
@@ -148,6 +149,23 @@ function startViewTimer(){
 function reportViewTimer(){
 	var elapsedTime=Date.now()-$startTime;
 	return elapsedTime;
+}
+
+function countdown(callback){
+	var currentCount=$count;
+	$('.count').show();
+
+	$countdown=setInterval(function(){
+	  if(currentCount>=1){
+	    $('.count .number').text(currentCount).show().fadeOut(900);
+	    currentCount--;
+	  }
+	  else{
+	  	$('.count').hide();
+	    clearInterval($countdown);
+	    callback();
+	  }
+	},1000);
 }
 
 
@@ -292,8 +310,8 @@ function askQuestion(index){
 	$('.game-answers').randomize('.answer');
 
 	//set dot colors
-	// $('.game-progress-dot').removeClass('current past').eq(question).addClass('current');
-	// $('.game-progress-dot:lt('+question+')').addClass('past');
+	$('.game-progress-dot').removeClass('current past').eq(index).addClass('current');
+	$('.game-progress-dot:lt('+index+')').addClass('past');
 
 	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
@@ -363,9 +381,12 @@ function initQuestions(){
 
 	shuffle($gameQuestions);
 	console.log($gameQuestions);
-	// for(i=0;i<5;i++){
-	// 	$('body').append($(`<p>${i+1}. ${$gameQuestions[i].question}</p>`));
-	// }
+	
+	//setup game dots
+	$('.game-progress-dots').empty();
+	for(var i=0;i<$gameLength;i++){
+		$('.game-progress-dots').append($('<div class="game-progress-dot"></div>'));
+	}
 
 	askQuestion($questionCount);
 }
@@ -438,14 +459,15 @@ function fillGrid(){
 		}	
 			
 	});
-	console.log(conflictList);
-
 
 
 	//animate filled grid in
-	$('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
-		startViewTimer();
+	countdown(function(){
+		$('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
+			startViewTimer();
+		});
 	});
+	
 }
 
 // ====================================
@@ -455,12 +477,30 @@ function fillGrid(){
 //try again button, restart game
 $('body').on('click','.btn-restart',function(){
 	$('.screen-grid').fadeOut(function(){
-		$('.grid').css('opacity','1');
+		$('.grid').css('opacity','0');
 
 		changeScreen('screen-grid',{
 			before:function(){
 				$('.end-history').flickity('destroy').empty().css('opacity','0');
 				fillGrid();
+			},
+			after:function(){
+				$('.btn-summaryToggle').removeClass('peeking');
+				$('.end-history-wrapper').css({'opacity':'1'});
+			}
+		});
+	})
+	
+});
+
+//change difficulty button
+$('body').on('click','.btn-change',function(){
+	$('.screen-grid').fadeOut(function(){
+		$('.grid').css('opacity','0');
+
+		changeScreen('screen-difficulty',{
+			before:function(){
+				$('.end-history').flickity('destroy').empty().css('opacity','0');
 			},
 			after:function(){
 				$('.btn-summaryToggle').removeClass('peeking');
@@ -486,10 +526,45 @@ $('body').on('click','.btn-summaryToggle',function(){
 	
 });
 
+//splash screen dismissal
+$('body').on('click','.splash',function(){
+	
+	$('.splash').fadeOut(function(){
+		$('.difficulty-settings').fadeIn();
+	});
+
+	return false;
+	
+});
+
+//quit game button
+$('body').on('click','.btn-quit',function(){
+	clearTimeout($viewTimer);
+	
+	clearInterval($countdown);
+	changeScreen('screen-difficulty',{after:function(){
+		$('.game-timer-bar-inner').stop().css('width','100%');
+		$('.grid').css('opacity','0');
+	}});
+
+	return false;
+	
+});
+
+
+
 var attempt=0;
 $(document).ready(function() {
 	$.getJSON('items.json',function(data){
 		items=data;
-		fillGrid();
+
+		//begin game button
+		$('body').on('click','.btn-begin',function(){
+			$viewTime=$('[name=difficulty_set]:checked').attr('value')*1000;
+
+			changeScreen('screen-grid',{after:fillGrid});
+			return false;
+		});
+		
 	});
 });

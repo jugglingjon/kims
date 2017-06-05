@@ -41,26 +41,114 @@ Examples:
 .clearfix:after {
   clear: both;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto 100.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto 300.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto 300italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto 500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto 700.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/Roboto Condensed regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/Roboto Condensed 700.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+[class^="triviaIcon-"],
+[class*=" triviaIcon-"] {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
 body {
-  background: white;
+  background: url('../img/game-background.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.screen-difficulty {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/splash-background.jpg') no-repeat;
+  background-size: cover;
+}
+.screen-difficulty .splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .screen-grid .game-timer-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 20px;
+  height: 12px;
+  background: rgba(27, 25, 14, 0.25);
 }
 .screen-grid .game-timer-bar .game-timer-bar-inner {
-  height: 20px;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
-  background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
+  height: 12px;
   width: 100%;
+  background: #454338;
+}
+.screen-grid .count {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.screen-grid .count .number {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'Roboto Condensed';
+  text-align: center;
+  font-size: 400px;
+  text-shadow: 0 0 40px rgba(48, 47, 37, 0.2);
+  color: #FFFFFF;
+}
+.screen-grid .btn-quit {
+  position: absolute;
+  z-index: 100;
+  left: 20px;
+  top: 40px;
 }
 .grid {
   margin-top: 50px;
   opacity: 0;
-  background: white;
   position: relative;
   -webkit-transform-origin: top left;
           transform-origin: top left;
@@ -110,46 +198,24 @@ body {
   height: 600px;
 }
 .screen-game {
-  padding: 60px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
 }
 .screen-game .game-question-wrapper,
 .screen-end .game-question-wrapper {
   display: table;
   width: 100%;
-  height: 216px;
+  height: 185px;
   margin-bottom: 40px;
 }
 .screen-game .game-question-wrapper .game-question,
 .screen-end .game-question-wrapper .game-question {
   display: table-cell;
   width: 100%;
-  font-size: 50px;
-  color: black;
-  font-weight: 300;
+  font-size: 54px;
+  font-weight: 500;
+  color: #302F25;
   text-align: center;
   vertical-align: middle;
-}
-.screen-game .game-image,
-.screen-end .game-image {
-  height: 424px;
-  position: relative;
-  margin-bottom: 40px;
-  background-size: cover;
-  background-position: center center;
-}
-.screen-game .game-image .game-question,
-.screen-end .game-image .game-question {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 40px;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 30px;
-  color: white;
-  font-weight: 300;
-  text-align: center;
 }
 .screen-game .game-answers,
 .screen-end .game-answers {
@@ -158,16 +224,19 @@ body {
 }
 .screen-game .game-answers .answer,
 .screen-end .game-answers .answer {
-  background-color: #EEEEEE;
   display: table;
   float: left;
   margin: 0 20px 20px 0;
   padding: 20px;
   width: 334px;
   height: 190px;
-  font-size: 36px;
+  font-size: 34px;
+  font-weight: 500;
   text-align: center;
-  color: #056db6;
+  color: #302F25;
+  background: rgba(255, 255, 255, 0.25);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .screen-game .game-answers .answer:nth-child(2n),
 .screen-end .game-answers .answer:nth-child(2n) {
@@ -186,18 +255,22 @@ body {
 }
 .screen-game .game-answers.clicked .answer.clicked,
 .screen-end .game-answers.clicked .answer.clicked {
-  background-color: red;
-  color: white;
+  /* Rectangle 2 Copy 5: */
+  background: rgba(255, 61, 61, 0.1);
+  border: 4px solid #FF3D3D;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .screen-game .game-answers.clicked .answer.correct,
 .screen-end .game-answers.clicked .answer.correct {
-  background-color: green;
-  color: white;
+  background: rgba(177, 207, 59, 0.1);
+  border: 4px solid #B1CF3B;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .screen-game .game-answers.clicked .answer.clicked.correct,
 .screen-end .game-answers.clicked .answer.clicked.correct {
-  background-color: green;
-  color: white;
+  background: rgba(177, 207, 59, 0.1);
+  border: 4px solid #B1CF3B;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .game-progress-dots {
   position: fixed;
@@ -207,19 +280,17 @@ body {
   text-align: center;
 }
 .game-progress-dots .game-progress-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 15px;
+  height: 15px;
   display: inline-block;
   margin: 5px;
-  background-color: #fff;
-  opacity: .2;
+  background: rgba(27, 25, 14, 0.25);
 }
 .game-progress-dots .game-progress-dot.past {
-  opacity: .6;
+  background: #454338;
 }
 .game-progress-dots .game-progress-dot.current {
-  opacity: 1;
+  background: #454338;
 }
 .screen-end {
   position: absolute;
@@ -246,8 +317,6 @@ body {
 }
 .screen-end .end-scores {
   padding: 40px 0;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
-  background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
   zoom: 1;
 }
 .screen-end .end-scores:before,
@@ -271,9 +340,8 @@ body {
 .screen-end .end-scores .end-score-wrapper h1 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #1ba1c3;
   font-size: 70px;
-  font-weight: 300;
+  font-weight: 100;
 }
 .screen-end .end-scores .end-score-wrapper h1.end-score {
   color: white;
@@ -302,8 +370,6 @@ body {
   padding: 40px;
   margin-right: 60px;
   overflow: visible;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
-  background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
 }
 .screen-end .end-history-wrapper .end-history .game-data .game-question-wrapper {
   height: 210px;
@@ -363,7 +429,6 @@ body {
   left: 0;
   padding: 20px;
   text-align: center;
-  background-color: #2d475c;
 }
 .screen-end .end-footer .btn {
   margin: 0 10px;
