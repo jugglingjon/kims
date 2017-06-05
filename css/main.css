@@ -185,12 +185,13 @@ body {
           animation-direction: alternate;
 }
 .screen-difficulty .difficulty-settings {
-  text-align: center;
-  color: #EFEFED;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #EFEFED;
 }
 .screen-difficulty .difficulty-settings .instructions h2 {
   font-family: 'Roboto Condensed';
