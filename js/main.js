@@ -323,7 +323,7 @@ function askQuestion(index){
 	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
 		
-		//startQuestionTimer();
+		//$('.answer').cascadeIn('fadeInUp',500,100);
 
 		//when answer clicked
 		$('.answer').click(function(){
@@ -565,6 +565,10 @@ $('body').on('click','.btn-quit',function(){
 
 var attempt=0;
 $(document).ready(function() {
+
+	//implement fastclick
+	FastClick.attach(document.body);
+	
 	$.getJSON('items.json',function(data){
 		items=data;
 
