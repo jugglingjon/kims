@@ -187,7 +187,7 @@ function randomGrid(size, max) {
 
 //generates a new item's markup with correct size, markup, and image
 var newItem = function(name, filename, x, y) {
-	var randomRotate=Math.random()*30-15;
+	var randomRotate=Math.random()*20-10;
 	return $(`<div class="block block-${x}x block-${y}y" style="background-image: url('objects/${filename}.png');transform:rotate(${randomRotate}deg);"></div>`);
 };
 
