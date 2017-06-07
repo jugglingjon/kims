@@ -145,14 +145,16 @@ body {
   text-align: center;
 }
 .screen-difficulty .splash img {
-  width: 580px;
+  width: 640px;
   margin-top: 250px;
+  margin-right: 60px;
 }
 .screen-difficulty .splash h3 {
   font-size: 24px;
   color: white;
   font-weight: normal;
   margin-bottom: 200px;
+  margin-top: -30px;
 }
 @-webkit-keyframes pulse {
   0% {
