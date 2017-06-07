@@ -470,12 +470,10 @@ function fillGrid(){
 	$('.btn-quit').fadeIn($globalFadeTime);
 	//animate filled grid in
 	countdown(function(){
-		$('.grid').animateIn(function(){
+		$('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
+			
 			startViewTimer();
 		});
-		// $('.grid').animate({'opacity':'1'},$globalFadeTime,function(){
-		// 	startViewTimer();
-		// });
 	});
 	
 }
