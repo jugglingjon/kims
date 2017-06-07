@@ -222,6 +222,9 @@ body {
 .screen-difficulty .difficulty-settings .options label span {
   font-weight: normal;
 }
+.screen-difficulty .difficulty-settings .options label > * {
+  pointer-events: none;
+}
 .screen-difficulty .difficulty-settings .begin .btn {
   margin-top: 32px;
   font-size: 26px;
