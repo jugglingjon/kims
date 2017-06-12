@@ -271,15 +271,29 @@ body{
 				&:checked + label{
 					border: 2px solid #B1CF3B;
 					box-shadow: 0 0 6px 0 #B1CF3B;
+
+					img{
+						filter: drop-shadow(0px 0px 8px @brandHightlight);
+					}
 				}
 			}
 			label{
 				width: 220px;
 				display:inline-block;
+				padding: @lessPadding @lessPadding*3;
 				margin: 0 10px;
+				line-height:20px;
 
 				span{
-					font-weight: normal;
+					font-weight: @light;
+					display:block;
+					font-size: 14px;
+				}
+
+				img{
+					max-width:100%;
+					display:block;
+					filter: drop-shadow(0px 0px 8px #000);
 				}
 			}
 
